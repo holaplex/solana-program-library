@@ -1,0 +1,18 @@
+[package]
+name = "auction-house-agreement"
+version = "0.1.0"
+description = "Govern agreements between auction houses and creators."
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "auction_house_agreement"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = "0.18.2"
